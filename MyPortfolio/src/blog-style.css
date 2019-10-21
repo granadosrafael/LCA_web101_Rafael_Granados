@@ -21,7 +21,7 @@ nav > a {
 
   body{
 
-background: grey;
+background: grey !important;
 
 }
 
@@ -39,7 +39,7 @@ article {
 }
 
 article: hover {
-    background: red;
+    background: green !important;
 }
 
 article:hover > h3
