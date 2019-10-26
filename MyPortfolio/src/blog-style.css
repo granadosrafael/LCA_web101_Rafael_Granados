@@ -21,7 +21,7 @@ nav > a {
 
   body{
 
-background: grey !important;
+background: grey!important;
 
 }
 
@@ -38,8 +38,8 @@ article {
     width: 45%;
 }
 
-article: hover {
-    background: green !important;
+article :hover {
+    background: green!important;
 }
 
 article:hover > h3
@@ -48,3 +48,5 @@ article:hover > h3
  }
 
  /*this is a comment for git testing
+
+ 

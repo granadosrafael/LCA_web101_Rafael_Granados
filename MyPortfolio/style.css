@@ -93,3 +93,19 @@ body {
     letter-spacing: 16px;
     font-style: italic;
   }
+
+
+  /* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}

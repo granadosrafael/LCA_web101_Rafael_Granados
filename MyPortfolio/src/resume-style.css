@@ -1,0 +1,56 @@
+
+div{
+    box-sizing: border-box;
+    width: 90%;
+    border: 5px solid red;
+    float: left;
+  }
+  
+  .zero {
+    box-sizing: border-box;
+    width: 50%;
+    border: 5px solid red;
+    float: left;
+  }
+
+  .one {
+    box-sizing: border-box;
+    width: 90%;
+    border: 5px solid red;
+    float: left;
+  }
+
+  .two {
+    box-sizing: border-box;
+    height: 80%;
+    width: 20%;
+    border: 5px solid red;
+    float: right;
+  }
+
+section {
+    background: grey;
+    width: 75%;
+    
+    }
+    
+    .Names {
+        
+        width: 1024px;
+        height: 100px;
+        background: blue;
+        width: 100%;
+      }
+
+    .Education {
+        background: rgb(252, 16, 16);
+        width: 75%;
+        
+        }
+    .SideBar {
+        background: rgb(59, 16, 252);
+        height: 80%;
+        width: 75%;
+        
+        
+        }
