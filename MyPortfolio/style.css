@@ -94,9 +94,23 @@ body {
     font-style: italic;
   }
 
+  .portfolio
+   {
+    color:rgb(8, 47, 243);
+    grid-column: 2/3;
+    margin: 3% auto;
+    font-style: italic;
+  }
+
+
 
   /* Small and up (Landscape Phones) */
 @media (min-width: 411px) {
+  .logo {
+    width: 30%;
+    height: 30%;
+    margin: 3% 10%;
+  }
   .has-border {
     border-radius: 5px;
     border: 2px solid #0795C3;
@@ -110,6 +124,28 @@ body {
     border-radius: 50%;
     margin: 15% auto;
     grid-column: 2/3;
+  }
+
+  h1 {
+    color:rgb(249, 250, 255);
+    grid-column: 1/16;
+    margin: 3% auto;
+    border-bottom: 2px solid #1940A9;;
+  }
+  
+  h2 {
+    color:rgb(249, 250, 255);
+    grid-column: 1/16;
+    margin: 3% auto;
+    font-style: italic;
+  }
+
+  .portfolio
+   {
+    color: rgb(249, 250, 255);
+    grid-column: 1/16;
+    margin: 3% auto;
+    font-style: italic;
   }
 
 }
