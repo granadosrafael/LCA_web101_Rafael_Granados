@@ -1,22 +1,21 @@
 
 div{
-    box-sizing: border-box;
-    width: 90%;
-    border: 5px solid red;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
     float: left;
   }
   
   .zero {
     box-sizing: border-box;
     width: 50%;
-    border: 5px solid red;
+    
     float: left;
   }
 
   .one {
     box-sizing: border-box;
     width: 90%;
-    border: 5px solid red;
+    
     float: left;
   }
 
@@ -24,7 +23,7 @@ div{
     box-sizing: border-box;
     height: 80%;
     width: 20%;
-    border: 5px solid red;
+    
     float: right;
   }
 
@@ -54,3 +53,4 @@ section {
         
         
         }
+  

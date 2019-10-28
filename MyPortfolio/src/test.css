@@ -1,0 +1,69 @@
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  header {
+      width: 900px;
+  }
+  
+  nav, section {
+    float: right;
+  }
+  
+  nav {
+    background:blue;
+    width: 200px;
+   ` 
+    margin-right: 20px;
+    text-align:right;
+  }
+  
+  section {
+    width: 700px;
+
+    align-content: right;
+    background:red;
+    text-align: left;
+  }
+  
+  
+  body {
+    width: 500px;
+    background: lightslategrey;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    margin: 0;
+  }
+  
+  header,
+  nav,
+  section {
+    margin-top;: 10px;
+    float:right;
+    align-content: right;
+ 
+.Education {
+    align-content: left;
+
+ }
+   
+  }
+  
+  header {
+    padding: 00px 0;
+  }
+  
+  nav {
+    padding: 10px 0px;
+    
+  }
+  
+  
+  section {
+    padding: 00px 0px;'
+    
+  }
+  
