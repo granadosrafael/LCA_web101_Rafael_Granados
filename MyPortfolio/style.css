@@ -83,7 +83,7 @@ body {
     width: 70%;
     height: 15%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     border-radius: 25px;
     background: transparent;
     padding: 20px; 
@@ -145,18 +145,53 @@ body {
     color: rgb(249, 250, 255);
     grid-column: 1/16;
     margin: 3% auto;
-    font-style: italic;
+    font-style: bold;
   }
 
 }
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
+  .logo {
+    width: 30%;
+    height: 30%;
+    margin: 3% 10%;
+  }
   .has-border {
-    border-radius: 15px;
+    border-radius: 5px;
     border: 2px solid #0795C3;
     background: none;
     padding: 20px; 
+  }
+
+  #profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 15% auto;
+    grid-column: 2/3;
+  }
+
+  h1 {
+    color:rgb(249, 250, 255);
+    grid-column: 1/16;
+    margin: 3% auto;
+    border-bottom: 2px solid #1940A9;;
+  }
+  
+  h2 {
+    color:rgb(249, 250, 255);
+    grid-column: 1/16;
+    margin: 3% auto;
+    font-style: italic;
+  }
+
+  .portfolio
+   {
+    color: rgb(249, 250, 255);
+    grid-column: 1/16;
+    margin: 3% auto;
+    font-style: bold;
   }
 
 }

@@ -19,17 +19,11 @@ div{
     float: left;
   }
 
-  .two {
-    box-sizing: border-box;
-    height: 80%;
-    width: 20%;
-    
-    float: right;
-  }
-
+ 
 section {
     background: grey;
     width: 75%;
+    float: right;
     
     }
     
