@@ -1,50 +1,77 @@
 
-div{
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
-    float: left;
+ body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article article"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 05px;
+  grid-column-gap: 05px;
+  height: 100vh;
+  margin: 5;
+  }  
+header, footer, article, nav, div {
+  padding: -10em;
+  background:grey;
   }
-  
-  .zero {
-    box-sizing: border-box;
-    width: 50%;
+#pageHeader {
+  grid-area: header;
+  background:lightgrey;
+  margin: -20px,-20px;
+  align-content:top;
+
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article; 
     
-    float: left;
+  }
+#mainNav { 
+  grid-area: nav; 
   }
 
-  .one {
-    box-sizing: border-box;
-    width: 90%;
+  header{
+    /* text-align: left;
+    justify-content: center; */
     
-    float: left;
+
   }
+  h3{
+   line-height: 20px; /* 4px +12px + 4px */
+
+  }
+  h4{
+   
+  margin:05px;
+}
+h5{
+   
+  /* margin:0; */
+}
+  article{
+    
+    line-height: 16px; 
+  }
+  footer{
+    text-align: center;
+  }
+
+
+/* media query */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+       "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
 
  
-section {
-    background: grey;
-    width: 75%;
-    float: right;
-    
-    }
-    
-    .Names {
-        
-        width: 1024px;
-        height: 100px;
-        background: blue;
-        width: 100%;
-      }
-
-    .Education {
-        background: rgb(252, 16, 16);
-        width: 75%;
-        
-        }
-    .SideBar {
-        background: rgb(59, 16, 252);
-        height: 80%;
-        width: 75%;
-        
-        
-        }
-  
+}
