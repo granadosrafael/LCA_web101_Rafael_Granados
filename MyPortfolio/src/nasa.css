@@ -1,0 +1,93 @@
+body{
+    width: 850px;
+    margin: 0 auto;
+}
+
+
+main{
+    
+    height: 450px;
+    margin: 0 auto;
+    background-image: url(./andromeda.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 36px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    height: 324px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+article{
+    width: 285px;
+    height: 324px;
+    background-color: lightgrey;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    
+   }
+
+   h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+p{
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 60%; /* Full width */
+    padding: 20px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 20px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 06px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  nav{
+    font-size: 12px;
+    text-align: left;
+  }
