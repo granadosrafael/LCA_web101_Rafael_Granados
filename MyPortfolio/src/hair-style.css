@@ -1,0 +1,45 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "body body body"
+      "gallery gallery gallery"
+      "footer footer footer";
+    grid-template-rows: 80px 1fr 70px;  
+    grid-template-columns: 20% 1fr 15%;
+    grid-row-gap: 05px;
+    grid-column-gap: 05px;
+    height: 100vh;
+    margin: 5;
+    }  
+
+    header, footer, nav, div {
+        padding: -10em;
+        background:grey;
+        }
+
+
+        header {
+            grid-area: header;
+            background:lightgrey;
+            margin: -20px,-20px;
+            align-content:top;
+          
+            }
+          footer {
+            grid-area: footer;
+            background:red;
+            }
+          .gallery { 
+            grid-area: gallery; 
+            background:blue;
+              
+            }
+          body{ 
+            grid-area: body; 
+            background:blueviolet;
+            }
+
+
+
+            
