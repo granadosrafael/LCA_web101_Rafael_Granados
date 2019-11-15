@@ -1,83 +1,62 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./dashbackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative ;
-    height:1000px;
+
+header{
+    background-color:#2196F3 ;
+}
+
+.right{
+    grid-area: right;
+}
+
+.left{
+    grid-area:left;
+}
+
+.mew{
+    grid-area:mew;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    
+    "left mew right";
+    background-color: #2196F3;
+    padding: 05px;
+  }
+
+
+  .grid-item {
+  
    
-    /*height: 100vh;
-    width: 100vw;*/
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height:80%;
+
   }
 
-  h1{
-    color: rgb(226, 19, 19);
-      padding-top: 20px;
-      font-size: 42px;
-  }
+ 
 
-  h2{
+
+ 
+  
+  
+  h3{
     color: rgb(226, 19, 19);
     padding-top: 20px;
-    font-size: 21px;
-    float:right;
-}
-
-h3{
-  color: rgb(226, 19, 19);
-  padding-top: 20px;
-  font-size: 32px;
-  text-align: center;
-  font-style: italic;
-}
-
-
-
-
-/* .weatherwidget-io{
-  padding-right: 350px;
-
-} */
-
-
-
-    /* Trading View widget */
-
-  .tradingview-widget-container {
-      float:right;
-      padding-right: -200px;
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
   }
 
 
-
-
-
- .widget {
-     position: relative;
-
- }
-
- html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  .footer {
+    text-align: center;
   }
-  
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
-  html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-  }
-  
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
-  
+
+
   .calculator {
     border: 5px solid black;
     border-radius: 50px;
@@ -158,17 +137,10 @@ h3{
   }
 
 
-  h1{
-    font:size: 60px;
-  }
-  
 
-  /* Medium and up (Tablets) */
-@media (min-width: 768px) {
-  .weatherwidget-io {
-    float: left;
-  }
+  @media screen and (max-width: 600px) {
+    .grid-item {
+      width: 50%;
+    }
   }
 
-
-}
