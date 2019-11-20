@@ -1,0 +1,47 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: "Header Header Header" "Form Info Contact" "Footer Footer Footer";
+    height: 95vh;
+  }
+  
+  .Header { grid-area: Header; 
+    
+    
+}
+  
+  .Contact { grid-area: Contact; 
+    
+    margin-top: 15%;
+    margin-left: 30%;
+    
+}
+
+  .Info { grid-area: Info; 
+   
+        
+        margin-top: 25%;
+        margin-left: 20%;
+        
+       
+     
+
+}
+  
+#ul{
+    width: 60%;
+}
+
+  .Form { grid-area: Form; 
+}
+  .Form{
+
+    margin-top: 15%;
+    margin-left: 10%;
+   
+   
+
+  }
+  .Footer { grid-area: Footer; }
+  
