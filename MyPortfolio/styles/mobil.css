@@ -14,9 +14,9 @@ h1{
 
 
 body{
-    background-image: url(./dashbackground.jpg);
+    background-image: url(../images/dashbackground.jpg);
     background-repeat: no-repeat;
-   
+    
     position: absolute ;
 }
 .grid-container * { 
