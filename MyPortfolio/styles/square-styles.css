@@ -6,7 +6,7 @@
 
 body {
     background: rgb(198, 235, 210);
-    height: 100vh;
+    
 }
 
 .container {
@@ -22,6 +22,7 @@ body {
     height: 50px;
     width: 50px;
     grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
     justify-self: center;
 }
 .box2 {

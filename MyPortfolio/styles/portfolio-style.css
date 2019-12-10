@@ -1,7 +1,7 @@
-html, body, .grid-container { height: 100%; margin: 0; }
+html, body, .grid-container, footer { height: 100%; margin: 0; }
 
 .grid-container * { 
- 
+ background:rgb(140, 140, 245);
  position: relative;
 }
 
@@ -15,17 +15,21 @@ html, body, .grid-container { height: 100%; margin: 0; }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 15% 37.5% 37.5% 10%;
-  grid-template-areas: "Header Header Header" "div1 div2 div3" "div4 div5 div6" "Footer Footer Footer";
+  grid-template-rows: 15% 25% 25% 25% 10%;
+  grid-template-areas: "Header Header Header" "div1 div2 div3" "div4 div5 div6 " "div7 div8 div9 " "Footer Footer Footer";
 }
 
 .Header { grid-area: Header; }
 
-.div1 { grid-area: div1;
-  
-  
+#header1 {
+  grid-area: header;
+  background:lightgrey;
+  margin: 0px,-10px;
+  align-content:top;
 
-}
+  }
+
+.div1 { grid-area: div1; }
 
 .div2 { grid-area: div2; }
 
@@ -37,4 +41,99 @@ html, body, .grid-container { height: 100%; margin: 0; }
 
 .div6 { grid-area: div6; }
 
+.div7 { grid-area: div7; }
+
+.div8 { grid-area: div8; }
+
+.div9 { grid-area: div9; }
+
 .Footer { grid-area: Footer; }
+
+
+.border {
+  border: 1px solid blue;
+} 
+
+
+
+
+/* CSS media query within a stylesheet */
+
+@media (max-width: 600px) {
+  
+
+html, body, .grid-container, .Footer { height: 100%;  width: 100%; margin: 0; background-color: #444444; }
+
+.grid-container * { 
+
+ position: relative;
+}
+
+.grid-container *:after { 
+ 
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Header" "div1" "div2" "div3" "div4" "div5" "div6" "div7" "div8" "div9" "footer";
+}
+
+.Header { grid-area: Header;
+          width: 100%; }
+
+.div1 { grid-area: div1;
+transform: scale(.85); 
+justify-self: left;
+}
+
+.div2 { grid-area: div2; 
+  transform: scale(.85); 
+  justify-self: left;
+  }
+
+.div3 { grid-area: div3;
+  transform: scale(.85); 
+  justify-self: left;
+  }
+
+.div4 { grid-area: div4; 
+  transform: scale(.85); 
+  justify-self: left;
+  }
+
+.div5 { grid-area: div5;
+  transform: scale(.85); 
+  justify-self: left;
+  }
+
+.div6 { grid-area: div6; 
+  transform: scale(.85); 
+  justify-self: left;
+  }
+
+.div7 { grid-area: div7; 
+    transform: scale(.85); 
+    justify-self: center;
+    }
+
+.div8 { grid-area: div8; 
+    transform: scale(.85); 
+    justify-self: center;
+    }
+ 
+.div9 { grid-area: div9; 
+    transform: scale(.85); 
+    justify-self: center;
+    }
+
+.footer { grid-area: footer; 
+  background-color: burlywood;
+  text-align: left;
+  height: 10px;}
+
+}
