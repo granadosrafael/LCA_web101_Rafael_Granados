@@ -17,14 +17,15 @@
   
   .Contact { grid-area: Contact; 
    ;
-    margin-top: 15%;
-    margin-left: 30%;
+	 margin-top: 15%;
+	margin-left: 25%;
+	float: left;
     
 }
 
   .Info { grid-area: Info; 
    
-        
+		font-style: italic;
         margin-top: 25%;
         margin-left: 20%;
         
