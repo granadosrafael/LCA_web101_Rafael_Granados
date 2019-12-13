@@ -88,5 +88,11 @@ html, body, .grid-container { height: 100%; margin: 5px; }
 
  }
 
+ .Contact { grid-area: Contact; 
+  ;
+   margin-top: 15%;
+   
+   
+}
 
 
