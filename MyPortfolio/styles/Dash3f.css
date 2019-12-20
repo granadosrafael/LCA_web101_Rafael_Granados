@@ -1,0 +1,51 @@
+html, body, .grid-container { 
+    height: 100%; 
+    margin: 0; 
+    background-color: black;
+    background-image: url('https://wallpapercave.com/wp/5KLTq1z.jpg');
+}
+
+.grid-container * { 
+ 
+ position: relative;
+}
+
+.grid-container *:after { 
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Header Header Header" "W1 W2 W3" "W4 W5 W6" "Footer Footer Footer";
+}
+
+.Header { grid-area: Header; }
+
+.W1 { grid-area: W1; }
+
+.W2 { grid-area: W2; }
+
+.W3 { grid-area: W3; }
+
+.W4 { grid-area: W4; }
+
+.W5 { grid-area: W5; }
+
+.W6 { grid-area: W6; }
+
+.Footer { grid-area: Footer; }
+
+@media screen 
+   and (max-device-width: 800px) 
+    and (max-device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) {
+      p {
+        font-size: 1em;
+      }
+
+
