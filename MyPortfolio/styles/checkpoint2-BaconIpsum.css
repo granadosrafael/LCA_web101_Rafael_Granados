@@ -1,0 +1,208 @@
+html, body, .grid-container { height: 100vh; margin: 0; }
+
+/* .grid-container * { 
+ position: relative;
+ 
+} */
+
+/* .grid-container *:after { 
+    background-color:black;
+ position: absolute;
+ top: 0;
+ left: 0;
+} */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Top Top Top" "Bot1 Bot2 Bot3" "Bot4 Bot5 Bot6" ;
+    height: 100vh;
+    background-color:black;
+  }
+  
+  .Top { grid-area: Top; 
+    text-align: center;
+    padding: 100px;
+    background-color: rgb(43,205,192);
+}
+  
+  .Bot1 { grid-area: Bot1; 
+    
+    background-color: rgb(51,168,221);
+    margin-top: 30px;  
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em
+    }
+  
+  .Bot2 { grid-area: Bot2; 
+    background-color :rgb(248,102,53);
+    margin-top: 30px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em;
+    
+    }
+
+  
+  .Bot3 { grid-area: Bot3; 
+    background-color: rgb(205, 43, 165); 
+    margin-top: 30px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em;
+}
+
+.Bot4 { grid-area: Bot4; 
+    background-color:black;
+    
+    
+}
+
+.Bot5 { grid-area: Bot5; 
+    background-color:black;
+    
+    
+}
+
+.Bot6 { grid-area: Bot6; 
+    
+    background-color:black;
+    
+}
+  
+  
+h3 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 30pt;
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 55px;
+    font-family: 'Lobster', cursive;
+}
+
+
+h1{
+    color: white;
+    font-size: 40pt;
+    font-family: 'Lobster', cursive;
+}
+#nav{
+    text-align: center;
+    
+    
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas: "Top" "Bot1" "Bot4" "Bot2" "Bot5" "Bot3" "Bot6" ;
+        /* height: 100vh; */
+        width: 100vw;
+        background-color:black;
+      }
+      
+      .Top { grid-area: Top; 
+        text-align: center;
+        padding: 100px;
+        background-color: rgb(43,205,192);
+    }
+      
+      .Bot1 { grid-area: Bot1; 
+        
+        background-color: rgb(51,168,221);
+        /* margin-top: 30px;   */
+        /* height: 50px; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-top: auto;
+        width: 16em
+        }
+      
+      .Bot2 { grid-area: Bot2; 
+        background-color :rgb(175, 123, 105);
+        /* margin-top: 30px; */
+        /* height: 50px; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        width: 16em;
+        margin-top: auto;
+        }
+    
+      
+      .Bot3 { grid-area: Bot3; 
+        background-color: rgb(205, 43, 165); 
+        /* margin-top: 30px;
+        height: 50px; */
+         margin-top: auto;
+        /*margin-left: auto; */
+        /* margin-right: auto; */
+        width: 16em;
+    }
+    
+    .Bot4 { grid-area: Bot4; 
+        background-color:black;
+        
+        
+    }
+    
+    .Bot5 { grid-area: Bot5; 
+        background-color:black;
+        
+        
+    }
+    
+    .Bot6 { grid-area: Bot6; 
+        
+        background-color:black;
+        
+    }
+      
+      
+    h3 {
+        color: white;
+        text-align: center;
+        margin: auto;
+        /* padding-top: 10px; */
+        font-size: 30pt;
+        font-family: 'Lobster', cursive;
+    }
+    
+    h2 {
+        color: white;
+        text-align: center;
+        margin: auto;
+        padding: 55px;
+        font-family: 'Lobster', cursive;
+    }
+    
+    
+    h1{
+        color: white;
+        font-size: 40pt;
+        font-family: 'Lobster', cursive;
+    }
+    #nav{
+        text-align: center;
+        
+        
+        position: relative;
+    }
+ }
