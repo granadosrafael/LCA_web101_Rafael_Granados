@@ -1,0 +1,66 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 18% 60% 20%;
+    grid-template-areas: "Header Header Header" "Form Info Contact" "Footer Footer Footer";
+    height: 95vh;
+    background-color: ivory;
+  }
+  
+  .Header { grid-area: Header;
+    /* background-color: #02B0D1; */
+    
+    background-color :rgb(175, 123, 105);
+    
+    
+}
+  
+  .Contact { grid-area: Contact; 
+   ;
+	 margin-top: 15%;
+	margin-left: 25%;
+	float: left;
+    
+}
+
+  .Info { grid-area: Info; 
+   
+		font-style: italic;
+        margin-top: 25%;
+        margin-left: 20%;
+        
+       
+     
+
+}
+  
+#ul{
+    width: 80%;
+    font-size: large;
+}
+
+  .Form { grid-area: Form; 
+}
+  .Form{
+
+    margin-top: 25%;
+    margin-left: 20%;
+   
+
+  }
+  .Footer { grid-area: Footer; 
+    background-color :rgb(175, 123, 105);
+  }
+  
+
+  .has-border {
+    border-radius: 25px;
+    border: 2px solid rgb(51,168,221);
+    background: none;
+    padding: 10px; 
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
