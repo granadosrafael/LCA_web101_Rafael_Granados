@@ -40,7 +40,11 @@ body{
   }
 
 
-
+.geo{
+  font-size: x-large;
+  color: white;
+  float: left;
+}
 
 
  @media only screen and (max-device-width: 500px) {
